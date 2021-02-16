@@ -7,15 +7,17 @@ import { FuelEco } from "./Screen/FuelEco";
 function App() {
   return (
     <Router>
-      <div className="h-screen">
-        <Switch>
-          <Route path="/fuel">
-            <FuelEco />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
+      <div className="flex h-screen justify-center items-center">
+        <div className="container -mt-80">
+          <Switch>
+            <Route path="/fuel-eco">
+              <FuelEco />
+            </Route>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
+        </div>
       </div>
     </Router>
   );
