@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export const FuelEco = () => {
+const FuelEco = () => {
   return (
     <div>
       <div className="grid grid-cols-5 gap-3">
@@ -24,3 +24,5 @@ export const FuelEco = () => {
     </div>
   );
 };
+
+export default FuelEco;

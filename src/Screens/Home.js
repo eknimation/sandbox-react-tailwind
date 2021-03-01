@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export const Home = () => {
+const Home = () => {
   return (
     <div>
       <div className="grid grid-cols-5 gap-3">
@@ -9,7 +9,10 @@ export const Home = () => {
             <div className="h-48 bg-red-50">Home</div>
           </Link>
 
-          <div className="h-48 bg-red-50">2</div>
+          <Link to="/spring">
+            <div className="h-48 bg-red-50">Spring</div>
+          </Link>
+
           <div className="h-48 bg-red-50">3</div>
           <div className="h-48 bg-red-50">4</div>
         </div>
@@ -24,3 +27,5 @@ export const Home = () => {
     </div>
   );
 };
+
+export default Home;
